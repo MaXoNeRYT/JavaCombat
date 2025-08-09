@@ -6,6 +6,8 @@ import cn.nukkit.item.Item;
 import cn.nukkit.item.enchantment.Enchantment;
 import cn.nukkit.plugin.PluginBase;
 import cn.nukkit.utils.TextFormat;
+import com.luminiadev.lumi.command.ExampleGiveCommand;
+import com.luminiadev.lumi.command.ExampleSetBlockCommand;
 import com.luminiadev.lumi.command.RandomEffectsCommand;
 import com.luminiadev.lumi.command.SimplePluginCommand;
 import com.luminiadev.lumi.customblock.BlockCustomExample;
@@ -34,6 +36,8 @@ public class ExamplePlugin extends PluginBase {
 
         this.getServer().getCommandMap().register("ExamplePlugin", new RandomEffectsCommand(this));
         this.getServer().getCommandMap().register("ExamplePlugin", new SimplePluginCommand(this));
+        this.getServer().getCommandMap().register("ExamplePlugin", new ExampleGiveCommand(this));
+        this.getServer().getCommandMap().register("ExamplePlugin", new ExampleSetBlockCommand(this));
 
         // Registering non-reflection event
         this.getServer().getPluginManager().subscribeEvent(PlayerJumpEvent.class, event -> {
