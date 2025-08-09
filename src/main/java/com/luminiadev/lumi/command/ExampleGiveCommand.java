@@ -17,11 +17,8 @@ import com.luminiadev.lumi.ExamplePlugin;
 
 import java.util.List;
 import java.util.Map;
-import java.util.Random;
 
 public class ExampleGiveCommand extends PluginCommand<ExamplePlugin> {
-
-    private final Random random = new Random();
 
     public ExampleGiveCommand(ExamplePlugin owner) {
         super("egive", owner);

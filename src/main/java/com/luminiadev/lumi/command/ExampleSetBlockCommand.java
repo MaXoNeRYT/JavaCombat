@@ -15,11 +15,8 @@ import cn.nukkit.level.Position;
 import com.luminiadev.lumi.ExamplePlugin;
 
 import java.util.Map;
-import java.util.Random;
 
 public class ExampleSetBlockCommand extends PluginCommand<ExamplePlugin> {
-
-    private final Random random = new Random();
 
     public ExampleSetBlockCommand(ExamplePlugin owner) {
         super("esetblock", owner);
