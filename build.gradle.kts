@@ -18,6 +18,7 @@ repositories {
 
 dependencies {
     compileOnly("com.koshakmine:Lumi:1.1.0-SNAPSHOT")
+    compileOnly("org.jetbrains:annotations:26.0.2")
     compileOnly("org.projectlombok:lombok:1.18.38")
     annotationProcessor("org.projectlombok:lombok:1.18.38")
 }
