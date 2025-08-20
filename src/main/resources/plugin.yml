@@ -1,5 +1,7 @@
-name: "ExamplePlugin"
+name: "JavaCombat"
 version: "1.0.0-SNAPSHOT"
-description: "Example plugin for Lumi bedrock server software"
+description: "JavaCombat plugin by MaXoNeRYT"
 api: ["1.0.0"]
-main: "com.luminiadev.lumi.ExamplePlugin"
+author: MaXoNeRYT
+website: https://github.com/MaXoNeRYT
+main: "md.maxoneryt.javacombat.JavaCombat"

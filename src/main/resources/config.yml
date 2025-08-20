@@ -1,0 +1,88 @@
+# ===========================
+# JavaCombat Configuration
+# ===========================
+
+# ---------------------------
+# General Settings / Общие настройки
+# ---------------------------
+default-cooldown-ticks: 5          # Default cooldown in ticks / Стандартный кулдаун в тиках
+full-damage: 1.0                   # Damage multiplier when not on cooldown / Множитель урона без кулдауна
+cooldown-damage-multiplier: 0.5    # Damage multiplier during cooldown / Множитель урона при кулдауне
+cooldown-text-format: "!jc.{0}"    # Format for cooldown text / Формат текста кулдауна
+max-cooldown-value: 80.00          # Maximum cooldown value / Максимальное значение кулдауна
+cooldown-display-enabled: true     # Enable cooldown display / Включить отображение кулдауна
+
+# ---------------------------
+# Item Cooldowns / Кулдауны для конкретных предметов
+# ---------------------------
+item-cooldowns:
+  minecraft:diamond_axe: 20
+  minecraft:golden_axe: 20
+  minecraft:iron_axe: 22
+  minecraft:mace: 40
+  minecraft:netherite_axe: 20
+  minecraft:stone_axe: 25
+  minecraft:trident: 18
+  minecraft:wooden_axe: 25
+
+# ---------------------------
+# Tag Cooldowns / Кулдауны для тегов предметов
+# ---------------------------
+tag-cooldowns:
+  minecraft:is_axe: 25
+  minecraft:is_hoe: 20
+  minecraft:is_pickaxe: 18
+  minecraft:is_shovel: 20
+  minecraft:is_sword: 11
+
+# ---------------------------
+# Item Animations / Анимации для конкретных предметов
+# ---------------------------
+item-animations:
+  minecraft:diamond_axe: "animation.player.diamond_axe"
+  minecraft:iron_axe: "animation.player.iron_axe"
+  minecraft:mace: "animation.player.mace"
+  minecraft:netherite_axe: "animation.player.diamond_axe"
+  minecraft:stone_axe: "animation.player.stone_axe"
+
+# ---------------------------
+# Tag Animations / Анимации для тегов предметов
+# ---------------------------
+tag-animations:
+  minecraft:is_axe: "animation.player.axe"
+  minecraft:is_hoe: "animation.player.hoe"
+  minecraft:is_pickaxe: "animation.player.pickaxe"
+  minecraft:is_shovel: "animation.player.shovel"
+  minecraft:is_sword: "animation.player.sword"
+
+# ---------------------------
+# Axe Damage / Урон топоров
+# ---------------------------
+axe-damage:
+  minecraft:diamond_axe: 9
+  minecraft:golden_axe: 7
+  minecraft:iron_axe: 9
+  minecraft:netherite_axe: 10
+  minecraft:stone_axe: 9
+  minecraft:wooden_axe: 7
+
+# ---------------------------
+# Sweep Attack / Атака с охватом
+# ---------------------------
+sweep-attack:
+  enabled: true                    # Enable sweep attack / Включить атаку с охватом
+  swords-only: true                # Only for swords / Только для мечей
+  damage-multiplier: 1.0           # Damage multiplier / Множитель урона
+  range: 2.5                        # Attack range / Радиус атаки
+  particle-count: 8                 # Number of sweep particles / Количество частиц
+
+# ---------------------------
+# Critical Hit / Критический удар
+# ---------------------------
+critical-hit:
+  enabled: true                    # Enable critical hits / Включить критические удары
+  multiplier: 1.5                  # Critical damage multiplier / Множитель урона критического удара
+  require-air: true                # Must be in air / Требуется быть в воздухе
+  check-liquid: true               # Check if in liquid / Проверять воду/лаву
+  check-climbable: true            # Check if on climbable block / Проверять скалодромы/лестницы
+  check-blocking: true             # Check if target is blocking / Проверять блокировку цели

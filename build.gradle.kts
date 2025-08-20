@@ -2,7 +2,7 @@ plugins {
     id("java")
 }
 
-group = "com.luminiadev.lumi"
+group = "md.maxoneryt.javacombat"
 version = "1.0.0-SNAPSHOT"
 
 java {
